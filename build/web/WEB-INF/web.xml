@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>registration_database</servlet-name>
+        <servlet-class>Hotel_booking.registration_database</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginCheck</servlet-name>
+        <servlet-class>Hotel_booking.LoginCheck</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>bookdetails</servlet-name>
+        <servlet-class>Hotel_booking.bookdetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registration_database</servlet-name>
+        <url-pattern>/registration_database</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginCheck</servlet-name>
+        <url-pattern>/LoginCheck</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>bookdetails</servlet-name>
+        <url-pattern>/bookdetails</url-pattern>
+    </servlet-mapping>
+</web-app>
